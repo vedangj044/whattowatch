@@ -1,7 +1,7 @@
 ![logo](https://hacktoberfest.digitalocean.com/assets/HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c.svg)
 
 # WhatToWatch
-WhatToWatch is a movie recommendation system based on the plot of the movies.
+WhatToWatch is a movie recommendation system based on the genre of the movies.
 
 # Reference Links
 
@@ -12,15 +12,15 @@ WhatToWatch is a movie recommendation system based on the plot of the movies.
 
 # Issue List
 
-* Discussion phase -> onboarding new develops and introfucing Github
-* Downloading Datasets and providing Visualization
-* Improve dataset to include Bollywood ( optional )
-* Using wikipedia API / scraping to get plot summary and adding to dataset ( optional )
-* Data preprocessing final
-* Adding cosine similarity
-* Converting to flask API
-* building basic frontend
-* testing phase
+* Discussion phase -> onboarding new developments and introducing Github.
+* Download Datasets and provide Visualization through graphs and histogram.
+* Enhance your dataset by adding Bollywood movies ( optional ).
+* Using wikipedia API / scraping to get plot summary and adding to dataset ( optional ).
+* Finally preprocess the data.
+* Add cosine similarity.
+* Converting to flask API.
+* Build the basic frontend.
+* Now test your model.
 * DONE !!! 
 
 This issue list is flexible, can be discussed on whatsapp.
