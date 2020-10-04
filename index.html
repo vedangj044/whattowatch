@@ -1,37 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Author:::::: Neeraj Singh NK -->
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search bar</title>
-    <!-- bootstrap  css-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <title>Movie Recommandation</title>
+  <link data-rh="true" rel="search" type="application/opensearchdescription+xml" title="Medium" href="/osd.xml">
+  <link data-rh="true" rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*8I-HPL0bfoIzGied-dzOvA.png">
+  <link data-rh="true" rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*8I-HPL0bfoIzGied-dzOvA.png">
+  <link data-rh="true" rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*8I-HPL0bfoIzGied-dzOvA.png">
+  <link data-rh="true" rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*8I-HPL0bfoIzGied-dzOvA.png">
+  <link data-rh="true" rel="mask-icon" href="https://cdn-static-1.medium.com/_/fp/icons/monogram-mask.KPLCSFEZviQN0jQ7veN2RQ.svg" color="#171717">
+  <link data-rh="true" rel="icon" href="https://cdn-static-1.medium.com/_/fp/icons/favicon-rebrand-medium.3Y6xpZ-0FSdWDnPM3hSBIA.ico">
+  <link data-rh="true" rel="canonical" href="https://medium.com">
+  <script data-rh="true" type="application/ld+json">{"@context":"http:\u002F\u002Fschema.org","@type":"Organization","url":"https:\u002F\u002Fmedium.com","name":"Medium","description":"Medium is not like any other platform on the internet. Our sole purpose is to help you find compelling ideas, knowledge, and perspectives. We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.","publishingPrinciples":"https:\u002F\u002Fpolicy.medium.com\u002Fmedium-terms-of-service-9db0094a1e0f","logo":{"@type":"ImageObject","url":"https:\u002F\u002Fmiro.medium.com\u002Fmax\u002F968\u002F1*F6SrJR7_s95r6oCF3ugMZw.png","width":484,"height":168}}</script>
+    <script data-rh="true">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-24232453-2', 'auto');
+        ga('send', 'pageview');</script><link rel="preload" href="https://cdn.optimizely.com/js/16180790160.js" as="script"><style type="text/css" data-fela-rehydration="294" data-fela-type="STATIC">html{box-sizing:border-box}*, *:before, *:after{box-sizing:inherit}body{margin:0;padding:0;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;color:rgba(0,0,0,0.8);position:relative;min-height:100vh}h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form{margin:0}menu, ol, ul{padding:0;list-style:none;list-style-image:none}main{display:block}a{color:inherit;text-decoration:none}a, button, input{-webkit-tap-highlight-color:transparent}img, svg{vertical-align:middle}button{background:transparent;overflow:visible}button, input, optgroup, select, textarea{margin:0}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="KEYFRAME">@-webkit-keyframes k1{0%{opacity:0}100%{opacity:1}}@-moz-keyframes k1{0%{opacity:0}100%{opacity:1}}@keyframes k1{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes k2{0%{opacity:1}100%{opacity:0}}@-moz-keyframes k2{0%{opacity:1}100%{opacity:0}}@keyframes k2{0%{opacity:1}100%{opacity:0}}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE">.a{font-family:medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif}.b{font-weight:400}.c{background-color:rgba(255, 255, 255, 1)}.l{background-color:rgba(255, 255, 255, 0.95)}.m{left:0}.n{padding:20px 30px}.o{position:fixed}.q{top:0}.r{width:100%}.s{z-index:500}.t{height:80px}.u{display:block}.v{display:flex}.w{justify-content:center}.ae{max-width:1192px}.af{min-width:0}.aj{fill:rgba(41, 41, 41, 1)}.ak{height:22px}.al{display:none}.an{height:35px}.ao{margin-left:auto}.ap{align-items:center}.aq{flex-direction:row}.ar{margin-right:30px}.as{font-family:medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif}.at{font-weight:300}.au{font-size:18px}.av{line-height:24px}.aw{color:rgba(41, 41, 41, 1)}.ax{color:inherit}.ay{fill:inherit}.az{font-size:inherit}.ba{border:inherit}.bb{font-family:inherit}.bc{letter-spacing:inherit}.bd{font-weight:inherit}.be{padding:0}.bf{margin:0}.bg:hover{cursor:pointer}.bh:hover{color:rgba(25, 25, 25, 1)}.bi:hover{fill:rgba(25, 25, 25, 1)}.bj:disabled{cursor:default}.bk:disabled{color:rgba(117, 117, 117, 1)}.bl:disabled{fill:rgba(117, 117, 117, 1)}.bm{width:150px}.bo{visibility:hidden}.bp{font-size:16px}.bq{line-height:20px}.br{color:rgba(255, 255, 255, 1)}.bs{border-radius:3px}.bt{border-style:solid}.bu{border-width:1px}.bv{box-sizing:border-box}.bw{fill:rgba(255, 255, 255, 1)}.bx{background:rgba(3, 168, 124, 1)}.by{border-color:rgba(3, 168, 124, 1)}.bz:focus{outline:none}.ca:hover{background:rgba(1, 143, 105, 1)}.cb:hover{border-color:rgba(1, 143, 105, 1)}.cc{display:inline-block}.cd{height:36px}.ce{padding:8px 16px}.cf{text-align:center}.cg{text-decoration:none}.ch{flex-direction:column}.ci{margin-top:55px}.cj{max-width:931px}.cm{font-family:medium-marketing-display-font, Georgia, Cambria, "Times New Roman", Times, serif}.cn{font-weight:500}.cy{font-weight:600}.dj{margin-top:45px}.dk{max-height:260px}.dl{overflow:hidden}.dm{flex-wrap:wrap}.dp{font-size:24px}.dq{line-height:32px}.dr{color:rgba(117, 117, 117, 1)}.ds{background-color:rgba(242, 242, 242, 1)}.dt{border-radius:99em}.du{height:42px}.dv{margin:5px}.dw{padding:6px}.dx{padding-right:12px}.dy{display:inline-flex}.dz:hover{background-color:rgba(0, 0, 0, 0.1)}.ea{box-shadow:3px 3px 16px rgba(204, 204, 204, 1)}.eb{margin-right:6px}.ec{height:30px}.ed{width:30px}.ee{margin-top:38px}.ef{max-width:608px}.eg{margin-top:34px}.eh{line-height:40px}.ei{height:62px}.ej{width:339.88px}.ek{margin-top:15px}.el{color:rgba(2, 158, 116, 1)}.em{fill:rgba(3, 168, 124, 1)}.en:hover{color:rgba(1, 143, 105, 1)}.eo:hover{fill:rgba(1, 143, 105, 1)}.ep:disabled{color:rgba(52, 231, 154, 0.5)}.eq:disabled{fill:rgba(52, 231, 154, 0.5)}.er{margin-top:85px}.es{justify-content:space-between}.ev{margin-top:18px}.ew{white-space:nowrap}.ex{margin-left:10px}.ey{margin-right:10px}.ez{box-shadow:3px 3px 16px rgba(0, 0, 0, 0.2)}.fa{border-radius:100px}.fb{display:inline}.fl{padding-left:34px}.fm{margin-top:22px}.fn{flex:1 0 auto}.fs{background-color:rgba(12, 242, 143, .2)}.ft{text-align:left}.fu{margin-bottom:44px}.fv{margin-bottom:13px}.gc{align-items:flex-end}.gd{flex-direction:row-reverse}.gf{flex:0 0 50%}.gh{margin-bottom:37px}.gn{border-width:1px 0 0}.go{border-color:rgba(204, 204, 204, 1)}.gz{margin-top:117px}.ha{height:470px}.hg{margin-top:65px}.hh{margin-right:-150px}.hi{width:40%}.hj{z-index:1}.hp{width:71%}.hu{height:100%}.hv{padding:0px 45px 0px 24%}.ia{position:absolute}.ib{top:-96px}.ic{animation:k1 300ms ease-in-out}.id{background-color:rgba(3, 168, 124, 1)}.ie{border-radius:50%}.if{border:1px solid rgba(3, 168, 124, 1)}.ig{cursor:pointer}.ih{height:11px}.ii{margin-right:11px}.ij{width:11px}.ik:last-child{margin-right:0px}.il:hover{background-color:rgba(3, 168, 124, 1)}.im:hover{border-color:rgba(3, 168, 124, 1)}.in{background-color:none}.io{border:1px solid rgba(117, 117, 117, 1)}.ip:hover{background-color:rgba(255, 255, 255, 1)}.iq:hover{border-color:rgba(255, 255, 255, 1)}.ir{padding-bottom:40px}.is{padding-top:65px}.it{position:relative}.jd{width:36px}.je{margin-top:24px}.jf{margin-top:27px}.jh{height:0px}.ji{max-width:700px}.jk{margin-top:50px}.jl{background-color:rgba(0, 0, 0, 1)}.jr{margin-bottom:19px}.jt{margin-bottom:20px}.ju{fill:rgba(255, 255, 255, 0.9)}.jv{color:rgba(255, 255, 255, 0.95)}.jw:hover{color:rgba(255, 255, 255, 1)}.jx:hover{fill:rgba(255, 255, 255, 0.9)}.jy:disabled{color:rgba(255, 255, 255, 0.6)}.jz:disabled{fill:rgba(255, 255, 255, 0.45)}.ka{color:rgba(255, 255, 255, 0.6)}.kb{margin-left:8px}.kc{min-width:150px}.kd{margin-bottom:16px}.ke{flex:0 0 100%}.kh{margin-bottom:60px}.ki{font-size:15px}.kj:disabled{color:rgba(3, 168, 124, 0.5)}.kk:disabled{fill:rgba(3, 168, 124, 0.5)}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 1080px)">.d{display:none}.ac{margin:0 64px}.cw{font-size:70px}.cx{line-height:80px}.dh{font-size:22px}.di{line-height:28px}.fi{font-size:24px}.fj{line-height:32px}.gx{margin:85px auto 0}.gy{width:418px}.jc{font-size:26px}.jq{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 1079.98px)">.e{display:none}.hf{height:525px}.ho{width:48%}.ht{width:66%}.hz{padding-right:27%}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 903.98px)">.f{display:none}.cl{margin-top:85px}.fr{padding-left:0}.ge{align-items:center}.gg{flex:0 0 85%}.gk{margin-top:60px}.gl{flex:0 0 100%}.gm{text-align:center}.hc{height:auto}.hd{display:flex}.he{flex-direction:column}.hl{margin-top:0px}.hm{width:100%}.hn{max-width:700px}.hr{margin-top:50px}.hs{height:100%}.hy{padding-left:7%}.iv{height:300px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 727.98px)">.g{display:none}.p{padding:14px 0}.ag{align-items:center}.ah{flex-direction:row}.ai{justify-content:space-between}.am{display:block}.bn{width:120px}.ck{margin-top:18px}.fq{flex:0 0 100%}.gj{margin-top:36px}.js{margin-top:40px}.kf{width:100%}.kg{margin-right:16px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 551.98px)">.h{display:none}.x{margin:0 24px}.co{font-size:32px}.cp{line-height:36px}.cz{font-size:18px}.da{line-height:22px}.dn{margin-top:22px}.do{max-height:310px}.et{margin-top:40px}.eu{flex-direction:column}.fc{line-height:24px}.fk{display:inline}.fo{padding-left:10px}.fp{text-align:left}.fw{font-size:28px}.fx{line-height:32px}.gi{margin-bottom:18px}.gp{margin:45px 3px 0}.gq{width:100%}.hb{margin-top:45px}.hk{max-width:350px}.hq{margin-top:50px}.hw{padding-right:7%}.hx{padding-left:7%}.iu{height:270px}.iw{overflow:scroll}.ix{font-size:22px}.iy{line-height:28px}.jg{margin-top:17px}.jj{margin-top:35px}.jm{margin-top:60px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 904px) and (max-width: 1079.98px)">.i{display:none}.ab{margin:0 64px}.cu{font-size:70px}.cv{line-height:80px}.df{font-size:22px}.dg{line-height:28px}.fg{font-size:24px}.fh{line-height:32px}.gv{margin:85px auto 0}.gw{width:418px}.jb{font-size:26px}.jp{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 728px) and (max-width: 903.98px)">.j{display:none}.z{margin:0 48px}.cs{font-size:70px}.ct{line-height:80px}.dd{font-size:22px}.de{line-height:28px}.fe{font-size:24px}.ff{line-height:32px}.ga{font-size:32px}.gb{line-height:36px}.gt{margin:85px auto 0}.gu{width:418px}.ja{font-size:26px}.jo{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 552px) and (max-width: 727.98px)">.k{display:none}.y{margin:0 24px}.cq{font-size:32px}.cr{line-height:36px}.db{font-size:18px}.dc{line-height:22px}.fd{line-height:24px}.fy{font-size:28px}.fz{line-height:32px}.gr{margin:85px auto 0}.gs{width:418px}.iz{font-size:26px}.jn{margin-top:85px}</style><script type="text/javascript" data-rh="true">(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent".split(" "), 0);
+        branch.init('key_live_ofxXr2qTrrU9NqURK8ZwEhknBxiI6KBm', {metadata: {}, 'no_journeys': true, 'disable_exit_animation': true, 'disable_entry_animation': true, 'tracking_disabled': null}, function(err, data) {});</script><link id="glyph_link" rel="stylesheet" type="text/css" href="https://glyph.medium.com/css/e/sr/latin/e/ssr/latin/e/ssb/latin/e/title/latin/swap/m2.css" data-rh="true">
+    </script>
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-<div class="container-fluid search">
-    <div class="row-fluid my-auto align-items-center ">
-        <div class="col-fluid my-auto ">
-        <!-- search bar --> 
-        <form class="search-box" >
-            <input type="text"  placeholder="Search">
-                <button class="button" type="submit" name="button">
-                    <i class="fas fa-search"></i>
-                </button>
-
-        </form>
+  <div class="container">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="t r u"></div>
+    <div class="l m n o p q r s">
+      <div class="branch-journeys-top">
+        <div class="v w">
+          <div class="x y z ab ac ae af r">
+            <div class="r v ag ah ai">
+              <div class="u g">
+                <h3>WhatTOWatch</h3></div>
+                <!-- <div class="al am"><svg width="35" height="35" viewBox="5 5 35 35" class="an aj"><path d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z"></path></svg></div><div class="ao v ap aq g"><div class="ar u"><h4 class="as at au av aw"><div><a href="#" class="ax ay az ba bb bc bd be bf bg bh bi bj bk bl" rel="noopener">Subscribe</a></div></h4></div><div class="ar u"><h4 class="as at au av aw"><a href="#" class="ax ay az ba bb bc bd be bf bg bh bi bj bk bl" rel="noopener">Write</a></h4></div><div class="ar u"><h4 class="as at au av aw"><span><a href="" class="ax ay az ba bb bc bd be bf bg bh bi bj bk bl" rel="noopener">Sign in</a> -->
+                  </span></h4></div></div>
+                  <div class="bm u bn">
+                    <div class="kl" id="lo-homepage-nav-bar-get-started-button">
+                      <span><a href="#" class="ax ay az ba bb bc bd be bf bg bh bi bj bk bl" rel="noopener"><div class="kl" id="lo-homepage-get-started-button">
+                        <!-- <div class="as at bp bq br bs bt bu bv bw bx by bz ca cb bg cc cd ce cf cg r">Get started</div> -->
+                      </div>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </nav>
+  <div class="container">
+   
+    <div class="kl" id="lo-homepage-hero-title"><div class="ci cj u ck cl"><h2 class="cm cn co cp cq cr cs ct cu cv cw cx aw">Movie Recommandation API.</h2></div></div>
+    <div class="kl" id="lo-homepage-select-pubtopics-cta"><h2 class="as cy cz da db dc dd de df dg dh di aw"><div class="kl" id="lo-homepage-select-pubtopics-cta-text">Select what you're into. We'll help you find great things to read.</div></h2></div>
 
-    <!-- bootstrap js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <div><div class="kl" id="lo-homepage-no-ads-section">
+      <div class="r u ft"><div class="kl" id="lo-homepage-no-ads">
+        <div class="fu er u"><div class="fv u">
+          <h2 class="cm cn fw fx fy fz ga gb cu cv cw cx aw">
+            </h2></div><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-sub-title">Your privacy stays yours. We don’t sell your data or target you with ads. Ever.</div></h3></div><div class="v gc gd dm ge"><div class="u gf fq gg"><div class="gh u gi"><h2 class="as cy cz da db dc dd de df dg dh di aw"><div class="kl" id="lo-homepage-no-ads-body-title">We do things differently.</div></h2></div><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Medium is not like any other platform on the internet.<!-- --> <span class="fs fb">Our sole purpose is to help you find compelling ideas, knowledge, and perspectives.</span> <!-- -->We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.</div></h3></div><div class="u gf gj gk gl gm"><div class="kl" id="lo-homepage-no-ads-get-started-button"></div></div></div><hr class="gn go gp gq gr gs gt gu gv gw gx gy"></div></div></div></div>
 
+
+
+ </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+  
 </body>
 </html>
