@@ -1,10 +1,12 @@
+// random images
+
 jQuery(function($){
     
-    var totalCount = 7;
+    var totalCount = 8;
     var num = Math.ceil( Math.random() * totalCount );
     function setBGImage() {
         var bgimage = './img/'+num+'.jpg';
-        $('.container-fluid').css(
+        $('.search').css(
         {
         backgroundImage:"url("+bgimage+")",
         backgroundRepeat: "repeat",
@@ -16,5 +18,19 @@ jQuery(function($){
     setBGImage();
     });
 
-  
+    // smooth scroll
+$(document).ready(function(){
+    
+    var scrollLink = $('.mybutton');
+
+    scrollLink.click(function(e){
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $('#abc').offset().top
+
+        }, 2000);
+    })
+
+})
     
