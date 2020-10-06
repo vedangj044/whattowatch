@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
     box-sizing: border-box;
 }
 
@@ -21,6 +21,7 @@ form.search-box{
 form.search-box input[type=text] {
     padding: 10px;
     font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
     background: white;
     align-items: center;
@@ -59,3 +60,97 @@ form.search-box input[type=text] {
        width: 10%; 
     }
   }
+/* ###############################3 */
+ 
+.recom{
+ min-height: 100vh;
+  justify-items: center;
+  align-items: center;
+  background: black;
+}
+.wtw-box{
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 4vh;
+  width: 250px;
+  margin-left: 7vh;
+
+}
+.heading{
+  color: white;
+  padding-top: 10px ;
+  padding-left: 4vh;
+  
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.recomheading{
+color:white;
+padding-top: 3vh;
+padding-left: 7vh;
+font-size: 17px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+.mycards{
+  padding-top: 2vh;
+  padding-left:7vh;
+  padding-right: 7vh;
+
+}
+.mycard{
+  border: none;
+  background-size: cover;
+}
+@media (min-width: 576px){
+
+  .mycards{
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+.recomheading{
+  padding-top: 3vh;
+  padding-left: 9vh;
+  font-size: 20px;
+}
+.heading{
+   font-size: 27px;
+}
+.wtw-box{
+  margin-left: 9vh;
+  width: 300px;
+}
+}
+.cardbody{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.card-img-top{
+  width: 100%;
+  height:55vw;
+  object-fit:cover;
+}
+@media(min-width:992px){
+  .card-img-top{
+    width: 100%;
+    height:45vw;
+    object-fit:cover;
+
+  }
+}
+@media(min-width:768px){
+  .card-img-top{
+    width: 100%;
+    height:35vw;
+    object-fit:cover;
+  }
+}
+@media(min-width:576px){
+  .card-img-top{
+    width: 100%;
+    height:25vw;
+    object-fit:cover;
+  }
+}
