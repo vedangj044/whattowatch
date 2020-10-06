@@ -1,0 +1,44 @@
+DATA PREPROCESSING STEPS 
+
+There is a lot of data available to us on the internet.
+So how can we manipulate and clean this text data to build a model? The answer lies in the wonderful world of Natural Language Processing (NLP).So, in this project we have used NLP to process the data.
+Cleaning the data consists of a multi stage process:
+    • Word tokenization 
+    • Predicting parts of speech for each token 
+    • Text lemmatization 
+    • Identifying and removing stop words, and much more. 
+What is word tokenization in NLP?
+Tokenization is essentially splitting a phrase, sentence, paragraph, or an entire text document into smaller units, such as individual words or terms. Each of these smaller units are called tokens.
+In tokenization, smaller units are created by locating word boundaries, these are the ending point of a word and the beginning of the next word.
+Tokenization is important because the meaning of the text could easily be interpreted by analyzing the words present in the text. 
+There are numerous uses of doing this. We can use this tokenized form to:
+    • Count the number of words in the text 
+    • Count the frequency of the word, that is, the number of times a particular word is present etc	
+In this project we have done tokenizatiom using NLTK library. NLTK, short for Natural Language ToolKit, is a library written in Python for symbolic and statistical Natural Language Processing.
+NLTK contains a module called tokenize() which further classifies into two sub-categories:
+    • Word tokenize: We use the word_tokenize() method to split a sentence into tokens or words 
+    • Sentence tokenize: We use the sent_tokenize() method to split a document or paragraph into sentences .
+Now, after tokenizing the word next step is to classify words into their parts of speech and labeling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.
+A part-of-speech tagger, or POS-tagger, processes a sequence of words, and attaches a part of speech tag to each word .
+
+What is text lemmatization and how it is better than stemming?
+
+Stemming and Lemmatization are Text Normalization (or sometimes called Word Normalization) techniques in the field of Natural Language Processing that are used to prepare text, words, and documents for further processing.
+
+Languages we speak and write are made up of several words often derived from one another. When a language contains words that are derived from another word as their use in the speech changes is called Inflected Language.
+
+Stemming and Lemmatization helps us to achieve the root forms. 
+
+"Stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language."
+
+Lemmatization, unlike Stemming is better as it reduces the inflected words properly ensuring that the root word belongs to the language. 
+
+For example, runs, running, ran are all forms of the word run, therefore run is the lemma of all these words.
+Python NLTK provides WordNet Lemmatizer that uses the WordNet Database to lookup lemmas of words.
+You need to provide the context in which you want to lemmatize that is the parts-of-speech (POS). This is done by giving the value for pos parameter in wordnet_lemmatizer.lemmatize.
+
+Also, one of the major step in preprocessing is to filter out useless data which is done by finding stop words.
+
+Stop Words: A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query.
+
+We would not want these words to take up space in our database, or taking up valuable processing time. For this, we can remove them easily, by storing a list of words that you consider to stop words.
