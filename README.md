@@ -26,6 +26,4 @@ WhatToWatch is a movie recommendation system based on the genre of the movies.
 
 CONTRIBUTE !! 
 
-![alt text](https://github.com/[agarwalharshprakash]/[WhatToWatch]/blob/[master]/Screenshot(43).png?raw=true)
-![Alt text](relative/path/to/Screenshot(43).png?raw=true "Title")
-![alt tag](http://url/to/Screenshot(43).png)
+![alt text](https://github.com/agarwalharshprakash/WhatToWatch/blob/master/Screenshot(43).png?raw=true)
