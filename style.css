@@ -1,89 +1,90 @@
 body{
-    margin: 0;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
 }
 
 .search{
-  height: 100vh;
-  justify-items: center;
-  align-items: center;
+height: 100vh;
+justify-items: center;
+align-items: center;
 }
 
 form.search-box{
-  display: flex;
-  padding-top: 42vh;
-  padding-left: 11%;
+display: flex;
+padding-top: 42vh;
+padding-left: 11%;
 
 }
 
 form.search-box input[type=text] {
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: none;
-    background: white;
-    align-items: center;
-    width: 70%;
-    color: black;
-    border-radius: 5px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
-    2px 2px 20px -1px rgba(0, 0, 0, 0.2);
-  }
-  
-  form.search-box button {
-
-    width: 15%; 
-    padding: 10px;
-    background: white;
-    border:none;
-    color: black;
-    font-size: 20px;
-    border: 2px outset black;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
-    2px 2px 20px -1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  @media (min-width: 576px)
-  {
-    form.search-box{
-      padding-left: 22%;
-      display: flex;
-    }
-    form.search-box input[type=text] {
-    width: 60%;
-    }
-   form.search-box button {
-       width: 10%; 
-    }
-  }
-/* ###############################3 */
- 
-.recom{
- min-height: 100vh;
-  justify-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: none;
+  background: white;
   align-items: center;
-  background: black;
+  width: 70%;
+  color: black;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+  2px 2px 20px -1px rgba(0, 0, 0, 0.2);
+}
+
+form.search-box button {
+
+  width: 15%; 
+  height: 65px;
+  padding: 10px;
+  background: white;
+  border:none;
+  color: black;
+  font-size: 20px;
+  border: 2px outset black;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+  2px 2px 20px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (min-width: 576px)
+{
+  form.search-box{
+    padding-left: 22%;
+    display: flex;
+  }
+  form.search-box input[type=text] {
+  width: 60%;
+  }
+ form.search-box button {
+     width: 10%; 
+  }
+}
+/* ###############################3 */
+
+.recom{
+min-height: 100vh;
+justify-items: center;
+align-items: center;
+background: black;
 }
 .wtw-box{
-  border: 2px solid white;
-  border-radius: 5px;
-  margin-top: 4vh;
-  width: 250px;
-  margin-left: 7vh;
+border: 2px solid white;
+border-radius: 5px;
+margin-top: 4vh;
+width: 250px;
+margin-left: 7vh;
 
 }
 .heading{
-  color: white;
-  padding-top: 10px ;
-  padding-left: 4vh;
-  
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
-  
+color: white;
+padding-top: 10px ;
+padding-left: 4vh;
+
+font-size: 22px;
+font-family: 'Montserrat', sans-serif;
+
 }
 .recomheading{
 color:white;
@@ -94,63 +95,63 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 }
 .mycards{
-  padding-top: 2vh;
-  padding-left:7vh;
-  padding-right: 7vh;
+padding-top: 2vh;
+padding-left:7vh;
+padding-right: 7vh;
 
 }
 .mycard{
-  border: none;
-  background-size: cover;
+border: none;
+background-size: cover;
 }
 @media (min-width: 576px){
 
-  .mycards{
-  padding-left: 10vh;
-  padding-right: 10vh;
+.mycards{
+padding-left: 10vh;
+padding-right: 10vh;
 }
 .recomheading{
-  padding-top: 3vh;
-  padding-left: 9vh;
-  font-size: 20px;
+padding-top: 3vh;
+padding-left: 9vh;
+font-size: 20px;
 }
 .heading{
-   font-size: 27px;
+ font-size: 27px;
 }
 .wtw-box{
-  margin-left: 9vh;
-  width: 300px;
+margin-left: 9vh;
+width: 300px;
 }
 }
 .cardbody{
-  font-family: 'Montserrat', sans-serif;
-  
+font-family: 'Montserrat', sans-serif;
+
 }
 
 .card-img-top{
-  width: 100%;
-  height:55vw;
-  object-fit:cover;
+width: 100%;
+height:55vw;
+object-fit:cover;
 }
 @media(min-width:992px){
-  .card-img-top{
-    width: 100%;
-    height:45vw;
-    object-fit:cover;
+.card-img-top{
+  width: 100%;
+  height:45vw;
+  object-fit:cover;
 
-  }
+}
 }
 @media(min-width:768px){
-  .card-img-top{
-    width: 100%;
-    height:35vw;
-    object-fit:cover;
-  }
+.card-img-top{
+  width: 100%;
+  height:35vw;
+  object-fit:cover;
+}
 }
 @media(min-width:576px){
-  .card-img-top{
-    width: 100%;
-    height:25vw;
-    object-fit:cover;
-  }
+.card-img-top{
+  width: 100%;
+  height:25vw;
+  object-fit:cover;
+}
 }
