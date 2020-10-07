@@ -12,17 +12,18 @@ WhatToWatch is a movie recommendation system based on the genre of the movies.
 
 # Issue List
 
-* Discussion phase -> onboarding new developments and introducing Github.
-* Download Datasets and provide Visualization through graphs and histogram.
-* Enhance your dataset by adding Bollywood movies ( optional ).
-* Using wikipedia API / scraping to get plot summary and adding to dataset ( optional ).
-* Finally preprocess the data.
-* Add cosine similarity.
-* Converting to flask API.
-* Build the basic frontend.
-* Now test your model.
-* DONE !!! 
+ - [x] Discussion phase -> onboarding new developments and introducing Github.
+ - [x] Download Datasets and provide Visualization through graphs and histogram.
+ - [x] Enhance your dataset by adding Bollywood movies ( optional ).
+ - [x] Using wikipedia API / scraping to get plot summary and adding to dataset ( optional ).
+ - [x] Finally preprocess the data.
+ - [ ] Add cosine similarity.
+ - [X] Converting to flask API.
+ - [X]  Build the basic frontend.
+ - [ ] Now test your model.
+ - [ ] DONE !!! 
 
-This issue list is flexible, can be discussed on whatsapp.
-
-CONTRIBUTE !! 
+ # Dataset Visualization
+ ![Screenshot1](https://github.com/vedangj044/WhatToWatch/blob/master/Screenshot%20(49).png)
+ ![Screenshot2](https://github.com/vedangj044/WhatToWatch/blob/master/Screenshot%20(43).png)
+ ### CONTRIBUTE !!
