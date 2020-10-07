@@ -2,7 +2,7 @@
 
 jQuery(function($){
     
-    var totalCount = 8;
+    var totalCount = 7;
     var num = Math.ceil( Math.random() * totalCount );
     function setBGImage() {
         var bgimage = './img/'+num+'.jpg';
@@ -17,6 +17,21 @@ jQuery(function($){
     }
     setBGImage();
     });
+
+    //autocomplete
+    $(document).ready(function(){
+      console.log("As");
+       $('input.autocomplete').autocomplete({
+         data: {
+           "Apple": null,
+           "Microsoft": null,
+           "Google": 'https://placehold.it/250x250'
+         },
+       });
+     });
+
+
+
 
     // smooth scroll
 $(document).ready(function(){
@@ -33,4 +48,3 @@ $(document).ready(function(){
     })
 
 })
-    
