@@ -23,6 +23,6 @@ WhatToWatch is a movie recommendation system based on the genre of the movies.
  - [ ] Now test your model.
  - [ ] DONE !!! 
 
-link1(https://github.com/vedangj044/WhatToWatch/blob/master/Screenshot%20(49).png)
+[Screenshot1](https://github.com/vedangj044/WhatToWatch/blob/master/Screenshot%20(49).png)
 
 CONTRIBUTE !! 
