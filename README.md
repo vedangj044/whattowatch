@@ -28,4 +28,4 @@ This issue list is flexible, can be discussed on whatsapp.
 CONTRIBUTE !! 
 
 
-Screenshot (43).png
+![img](http://i.imgur.com/Screenshot(43).png
