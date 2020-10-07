@@ -26,5 +26,5 @@ WhatToWatch is a movie recommendation system based on the genre of the movies.
 
 CONTRIBUTE !! 
 
-Link 1:
+![alt text](https://github.com/[agarwalharshprakash]/[WhatToWatch]/blob/[branch]/Screenshot(43).jpg?raw=true)
 Link 2:
