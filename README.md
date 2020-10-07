@@ -26,3 +26,5 @@ WhatToWatch is a movie recommendation system based on the genre of the movies.
 This issue list is flexible, can be discussed on whatsapp.
 
 CONTRIBUTE !! 
+
+
