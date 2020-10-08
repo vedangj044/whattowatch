@@ -155,3 +155,22 @@ object-fit:cover;
   object-fit:cover;
 }
 }
+.lastbutton{
+
+  height: 90px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 22px;
+ padding-top: 13px;
+ font-family: 'Lato', sans-serif;
+font-weight: bold;
+border-radius: 1.5rem;
+
+}
+.btn-info{
+  background-color: #51A1E6 ! important;
+
+}
+
+
