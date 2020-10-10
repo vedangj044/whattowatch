@@ -1,147 +1,158 @@
 <!DOCTYPE html>
-<!-- Author:::::: Neeraj Singh NK -->
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Movie Recommandation</title>
-  <link data-rh="true" rel="search" type="application/opensearchdescription+xml" title="Medium" href="/osd.xml">
-  <link data-rh="true" rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*8I-HPL0bfoIzGied-dzOvA.png">
-  <link data-rh="true" rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*8I-HPL0bfoIzGied-dzOvA.png">
-  <link data-rh="true" rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*8I-HPL0bfoIzGied-dzOvA.png">
-  <link data-rh="true" rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*8I-HPL0bfoIzGied-dzOvA.png">
-  <link data-rh="true" rel="mask-icon" href="https://cdn-static-1.medium.com/_/fp/icons/monogram-mask.KPLCSFEZviQN0jQ7veN2RQ.svg" color="#171717">
-  <link data-rh="true" rel="icon" href="https://cdn-static-1.medium.com/_/fp/icons/favicon-rebrand-medium.3Y6xpZ-0FSdWDnPM3hSBIA.ico">
-  <link data-rh="true" rel="canonical" href="https://medium.com">
-  <script data-rh="true" type="application/ld+json">{"@context":"http:\u002F\u002Fschema.org","@type":"Organization","url":"https:\u002F\u002Fmedium.com","name":"Medium","description":"Medium is not like any other platform on the internet. Our sole purpose is to help you find compelling ideas, knowledge, and perspectives. We don’t serve ads—we serve you, the curious reader who loves to learn new things. Medium is home to thousands of independent voices, and we combine humans and technology to find the best reading for you—and filter out the rest.","publishingPrinciples":"https:\u002F\u002Fpolicy.medium.com\u002Fmedium-terms-of-service-9db0094a1e0f","logo":{"@type":"ImageObject","url":"https:\u002F\u002Fmiro.medium.com\u002Fmax\u002F968\u002F1*F6SrJR7_s95r6oCF3ugMZw.png","width":484,"height":168}}</script>
-    <script data-rh="true">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-24232453-2', 'auto');
-        ga('send', 'pageview');</script><link rel="preload" href="https://cdn.optimizely.com/js/16180790160.js" as="script"><style type="text/css" data-fela-rehydration="294" data-fela-type="STATIC">html{box-sizing:border-box}*, *:before, *:after{box-sizing:inherit}body{margin:0;padding:0;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;color:rgba(0,0,0,0.8);position:relative;min-height:100vh}h1, h2, h3, h4, h5, h6, dl, dd, ol, ul, menu, figure, blockquote, p, pre, form{margin:0}menu, ol, ul{padding:0;list-style:none;list-style-image:none}main{display:block}a{color:inherit;text-decoration:none}a, button, input{-webkit-tap-highlight-color:transparent}img, svg{vertical-align:middle}button{background:transparent;overflow:visible}button, input, optgroup, select, textarea{margin:0}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="KEYFRAME">@-webkit-keyframes k1{0%{opacity:0}100%{opacity:1}}@-moz-keyframes k1{0%{opacity:0}100%{opacity:1}}@keyframes k1{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes k2{0%{opacity:1}100%{opacity:0}}@-moz-keyframes k2{0%{opacity:1}100%{opacity:0}}@keyframes k2{0%{opacity:1}100%{opacity:0}}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE">.a{font-family:medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif}.b{font-weight:400}.c{background-color:rgba(255, 255, 255, 1)}.l{background-color:rgba(255, 255, 255, 0.95)}.m{left:0}.n{padding:20px 30px}.o{position:fixed}.q{top:0}.r{width:100%}.s{z-index:500}.t{height:80px}.u{display:block}.v{display:flex}.w{justify-content:center}.ae{max-width:1192px}.af{min-width:0}.aj{fill:rgba(41, 41, 41, 1)}.ak{height:22px}.al{display:none}.an{height:35px}.ao{margin-left:auto}.ap{align-items:center}.aq{flex-direction:row}.ar{margin-right:30px}.as{font-family:medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif}.at{font-weight:300}.au{font-size:18px}.av{line-height:24px}.aw{color:rgba(41, 41, 41, 1)}.ax{color:inherit}.ay{fill:inherit}.az{font-size:inherit}.ba{border:inherit}.bb{font-family:inherit}.bc{letter-spacing:inherit}.bd{font-weight:inherit}.be{padding:0}.bf{margin:0}.bg:hover{cursor:pointer}.bh:hover{color:rgba(25, 25, 25, 1)}.bi:hover{fill:rgba(25, 25, 25, 1)}.bj:disabled{cursor:default}.bk:disabled{color:rgba(117, 117, 117, 1)}.bl:disabled{fill:rgba(117, 117, 117, 1)}.bm{width:150px}.bo{visibility:hidden}.bp{font-size:16px}.bq{line-height:20px}.br{color:rgba(255, 255, 255, 1)}.bs{border-radius:3px}.bt{border-style:solid}.bu{border-width:1px}.bv{box-sizing:border-box}.bw{fill:rgba(255, 255, 255, 1)}.bx{background:rgba(3, 168, 124, 1)}.by{border-color:rgba(3, 168, 124, 1)}.bz:focus{outline:none}.ca:hover{background:rgba(1, 143, 105, 1)}.cb:hover{border-color:rgba(1, 143, 105, 1)}.cc{display:inline-block}.cd{height:36px}.ce{padding:8px 16px}.cf{text-align:center}.cg{text-decoration:none}.ch{flex-direction:column}.ci{margin-top:55px}.cj{max-width:931px}.cm{font-family:medium-marketing-display-font, Georgia, Cambria, "Times New Roman", Times, serif}.cn{font-weight:500}.cy{font-weight:600}.dj{margin-top:45px}.dk{max-height:260px}.dl{overflow:hidden}.dm{flex-wrap:wrap}.dp{font-size:24px}.dq{line-height:32px}.dr{color:rgba(117, 117, 117, 1)}.ds{background-color:rgba(242, 242, 242, 1)}.dt{border-radius:99em}.du{height:42px}.dv{margin:5px}.dw{padding:6px}.dx{padding-right:12px}.dy{display:inline-flex}.dz:hover{background-color:rgba(0, 0, 0, 0.1)}.ea{box-shadow:3px 3px 16px rgba(204, 204, 204, 1)}.eb{margin-right:6px}.ec{height:30px}.ed{width:30px}.ee{margin-top:38px}.ef{max-width:608px}.eg{margin-top:34px}.eh{line-height:40px}.ei{height:62px}.ej{width:339.88px}.ek{margin-top:15px}.el{color:rgba(2, 158, 116, 1)}.em{fill:rgba(3, 168, 124, 1)}.en:hover{color:rgba(1, 143, 105, 1)}.eo:hover{fill:rgba(1, 143, 105, 1)}.ep:disabled{color:rgba(52, 231, 154, 0.5)}.eq:disabled{fill:rgba(52, 231, 154, 0.5)}.er{margin-top:85px}.es{justify-content:space-between}.ev{margin-top:18px}.ew{white-space:nowrap}.ex{margin-left:10px}.ey{margin-right:10px}.ez{box-shadow:3px 3px 16px rgba(0, 0, 0, 0.2)}.fa{border-radius:100px}.fb{display:inline}.fl{padding-left:34px}.fm{margin-top:22px}.fn{flex:1 0 auto}.fs{background-color:rgba(12, 242, 143, .2)}.ft{text-align:left}.fu{margin-bottom:44px}.fv{margin-bottom:13px}.gc{align-items:flex-end}.gd{flex-direction:row-reverse}.gf{flex:0 0 50%}.gh{margin-bottom:37px}.gn{border-width:1px 0 0}.go{border-color:rgba(204, 204, 204, 1)}.gz{margin-top:117px}.ha{height:470px}.hg{margin-top:65px}.hh{margin-right:-150px}.hi{width:40%}.hj{z-index:1}.hp{width:71%}.hu{height:100%}.hv{padding:0px 45px 0px 24%}.ia{position:absolute}.ib{top:-96px}.ic{animation:k1 300ms ease-in-out}.id{background-color:rgba(3, 168, 124, 1)}.ie{border-radius:50%}.if{border:1px solid rgba(3, 168, 124, 1)}.ig{cursor:pointer}.ih{height:11px}.ii{margin-right:11px}.ij{width:11px}.ik:last-child{margin-right:0px}.il:hover{background-color:rgba(3, 168, 124, 1)}.im:hover{border-color:rgba(3, 168, 124, 1)}.in{background-color:none}.io{border:1px solid rgba(117, 117, 117, 1)}.ip:hover{background-color:rgba(255, 255, 255, 1)}.iq:hover{border-color:rgba(255, 255, 255, 1)}.ir{padding-bottom:40px}.is{padding-top:65px}.it{position:relative}.jd{width:36px}.je{margin-top:24px}.jf{margin-top:27px}.jh{height:0px}.ji{max-width:700px}.jk{margin-top:50px}.jl{background-color:rgba(0, 0, 0, 1)}.jr{margin-bottom:19px}.jt{margin-bottom:20px}.ju{fill:rgba(255, 255, 255, 0.9)}.jv{color:rgba(255, 255, 255, 0.95)}.jw:hover{color:rgba(255, 255, 255, 1)}.jx:hover{fill:rgba(255, 255, 255, 0.9)}.jy:disabled{color:rgba(255, 255, 255, 0.6)}.jz:disabled{fill:rgba(255, 255, 255, 0.45)}.ka{color:rgba(255, 255, 255, 0.6)}.kb{margin-left:8px}.kc{min-width:150px}.kd{margin-bottom:16px}.ke{flex:0 0 100%}.kh{margin-bottom:60px}.ki{font-size:15px}.kj:disabled{color:rgba(3, 168, 124, 0.5)}.kk:disabled{fill:rgba(3, 168, 124, 0.5)}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 1080px)">.d{display:none}.ac{margin:0 64px}.cw{font-size:70px}.cx{line-height:80px}.dh{font-size:22px}.di{line-height:28px}.fi{font-size:24px}.fj{line-height:32px}.gx{margin:85px auto 0}.gy{width:418px}.jc{font-size:26px}.jq{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 1079.98px)">.e{display:none}.hf{height:525px}.ho{width:48%}.ht{width:66%}.hz{padding-right:27%}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 903.98px)">.f{display:none}.cl{margin-top:85px}.fr{padding-left:0}.ge{align-items:center}.gg{flex:0 0 85%}.gk{margin-top:60px}.gl{flex:0 0 100%}.gm{text-align:center}.hc{height:auto}.hd{display:flex}.he{flex-direction:column}.hl{margin-top:0px}.hm{width:100%}.hn{max-width:700px}.hr{margin-top:50px}.hs{height:100%}.hy{padding-left:7%}.iv{height:300px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 727.98px)">.g{display:none}.p{padding:14px 0}.ag{align-items:center}.ah{flex-direction:row}.ai{justify-content:space-between}.am{display:block}.bn{width:120px}.ck{margin-top:18px}.fq{flex:0 0 100%}.gj{margin-top:36px}.js{margin-top:40px}.kf{width:100%}.kg{margin-right:16px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (max-width: 551.98px)">.h{display:none}.x{margin:0 24px}.co{font-size:32px}.cp{line-height:36px}.cz{font-size:18px}.da{line-height:22px}.dn{margin-top:22px}.do{max-height:310px}.et{margin-top:40px}.eu{flex-direction:column}.fc{line-height:24px}.fk{display:inline}.fo{padding-left:10px}.fp{text-align:left}.fw{font-size:28px}.fx{line-height:32px}.gi{margin-bottom:18px}.gp{margin:45px 3px 0}.gq{width:100%}.hb{margin-top:45px}.hk{max-width:350px}.hq{margin-top:50px}.hw{padding-right:7%}.hx{padding-left:7%}.iu{height:270px}.iw{overflow:scroll}.ix{font-size:22px}.iy{line-height:28px}.jg{margin-top:17px}.jj{margin-top:35px}.jm{margin-top:60px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 904px) and (max-width: 1079.98px)">.i{display:none}.ab{margin:0 64px}.cu{font-size:70px}.cv{line-height:80px}.df{font-size:22px}.dg{line-height:28px}.fg{font-size:24px}.fh{line-height:32px}.gv{margin:85px auto 0}.gw{width:418px}.jb{font-size:26px}.jp{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 728px) and (max-width: 903.98px)">.j{display:none}.z{margin:0 48px}.cs{font-size:70px}.ct{line-height:80px}.dd{font-size:22px}.de{line-height:28px}.fe{font-size:24px}.ff{line-height:32px}.ga{font-size:32px}.gb{line-height:36px}.gt{margin:85px auto 0}.gu{width:418px}.ja{font-size:26px}.jo{margin-top:85px}</style><style type="text/css" data-fela-rehydration="294" data-fela-type="RULE" media="all and (min-width: 552px) and (max-width: 727.98px)">.k{display:none}.y{margin:0 24px}.cq{font-size:32px}.cr{line-height:36px}.db{font-size:18px}.dc{line-height:22px}.fd{line-height:24px}.fy{font-size:28px}.fz{line-height:32px}.gr{margin:85px auto 0}.gs{width:418px}.iz{font-size:26px}.jn{margin-top:85px}</style><script type="text/javascript" data-rh="true">(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent".split(" "), 0);
-        branch.init('key_live_ofxXr2qTrrU9NqURK8ZwEhknBxiI6KBm', {metadata: {}, 'no_journeys': true, 'disable_exit_animation': true, 'disable_entry_animation': true, 'tracking_disabled': null}, function(err, data) {});</script><link id="glyph_link" rel="stylesheet" type="text/css" href="https://glyph.medium.com/css/e/sr/latin/e/ssr/latin/e/ssb/latin/e/title/latin/swap/m2.css" data-rh="true">
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search bar</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- bootstrap  css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
-      <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 
 <body>
-  <div class="container">
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <div class="t r u"></div>
-    <div class="l m n o p q r s">
-      <div class="branch-journeys-top">
-        <div class="v w">
-          <div class="x y z ab ac ae af r">
-            <div class="r v ag ah ai">
-              <div class="u g">
-                <h3>WhatToWatch</h3></div>
-                  </span></h4></div></div>
-                  <div class="bm u bn">
-                    <div class="kl" id="lo-homepage-nav-bar-get-started-button">
-                      <span><a href="#" class="ax ay az ba bb bc bd be bf bg bh bi bj bk bl" rel="noopener"><div class="kl" id="lo-homepage-get-started-button">
-                        <!-- <div class="as at bp bq br bs bt bu bv bw bx by bz ca cb bg cc cd ce cf cg r">Get started</div> -->
-                      </div>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="container-fluid search p-3 ">
+    <div class="row-fluid my-auto align-items-center ">
+        <div class="col-fluid my-auto ">
+        <!-- search bar -->
+        <form class="search-box input-field " >
+            <input class="autocomplete" type="text" id="autocomplete-input" placeholder="Search" />
+          <label for="autocomplete-input"></label>
+
+                <button class="button mybutton" type="submit" name="button">
+                    <i class="fas fa-search"></i>
+
+                </button>
+
+        </form>
         </div>
-      </div>
     </div>
-  </nav>
+</div>
+<!-- <section class="py-5" > -->
+    <div class="container-fluid recom p-3" id="abc">
+      <h1 class="center" id = "loading" style="opacity:0"> Loading... </h1>
+        <div class="row-fluid" id="abc1">
+            <div class="col-fluid my-auto">
+                <div class="container">
+                  <div class="wtw-box">
+                    <h2 class="heading">WHAT TO WATCH</h2>
+                  </div>
+                    <h3 class="recomheading">Recommendations</h3>
+                    <!-- cards -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mycards">
+                        <div class="col mb-4">
+                          <div class="card card1 mycard h-100">
+                            <img id="poster0" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title0" class="card-title title-1">Inception</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card2 mycard h-100">
+                            <img id="poster1" src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title1" class="card-title title2">Shawshank Redemption</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card3 mycard h-100">
+                            <img  id="poster2" src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title2" class="card-title title3">La La Land</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card4 mycard h-100">
+                            <img  id="poster3" src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title3" class="card-title title4">Avengers Endgame</h5>
+                              <p class="card-text"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card5 mycard h-100">
+                            <img  id="poster4" src="https://m.media-amazon.com/images/M/MV5BMTQ4OTgzNTkwNF5BMl5BanBnXkFtZTgwMzI3MDE3NDE@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title4" class="card-title title5">Tomorrowland</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card6 mycard h-100">
+                            <img  id="poster5" src="https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title5" class="card-title title6">Wall-E</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card7 mycard h-100">
+                            <img  id="poster6" src="https://m.media-amazon.com/images/M/MV5BMjE2ODQxODMwOF5BMl5BanBnXkFtZTgwNDY5NjY3NDE@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title6" class="card-title title7">Paper Towns</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card8 mycard h-100">
+                            <img  id="poster7" src="https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title7" class="card-title title8">Zindagi Na Milegi Dobara</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col mb-4">
+                          <div class="card card9 mycard h-100">
+                            <img  id="poster8" src="https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 id="title8" class="card-title title9">Harry Potter</h5>
+                              <!-- <p class="card-text"></p> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-  <div class="v w"><div class="x y z ab ac ae af r"><div class="km" id="about-topics-and-pubs-section"><div class="u oz pa pb pc pd"><div class="v nf nh"><div class="v ch w"><div class="u ng nr pe pf am pg ph nq pi pj nn pk pl nk"><img class="r" src="https://www.vshsolutions.com/wp-content/uploads/2020/02/recommender-system-for-movie-recommendation.jpg" width="400" height="400" role="presentation"></div></div><div class="u nt nu nw pm ny nz"><div class="km" id="about-topics-and-pubs-eyebrow"><div class="u oa ob"></div></div><div class="km" id="about-topics-and-pubs-heading"></div><div class="km" id="about-topics-and-pubs-subheading"><div class="u pn po"><h4 class="as at pp pq pr ps pt pu ol om oo op aw"> </h4></div></div><div class="km" id="about-topics-and-pubs-cta-button"></div></div></div></div></div></div></div>
-  
+                      <div class="d-flex justify-content-center">
+                        <a href="info.html" target="blank" class="btn btn-info btn-lg active  lastbutton" role="button" aria-pressed="true"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                          width="64" height="64"
+                          viewBox="0 0 172 172"
+                          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M169.34609,86c0,-46.02344 -37.32266,-83.34609 -83.34609,-83.34609c-46.02344,0 -83.34609,37.32266 -83.34609,83.34609c0,46.02344 37.32266,83.34609 83.34609,83.34609c46.02344,0 83.34609,-37.32266 83.34609,-83.34609z" fill="#13579c"></path><path d="M49.08047,60.97266c0,-4.66953 1.51172,-9.40625 4.50156,-14.21016c2.98984,-4.80391 7.39063,-8.76797 13.13516,-11.92578c5.74453,-3.15781 12.46328,-4.73672 20.15625,-4.73672c7.12187,0 13.4375,1.31016 18.87969,3.96406c5.47578,2.62031 9.675,6.21484 12.66484,10.75c2.98984,4.53516 4.46797,9.43984 4.46797,14.74766c0,4.19922 -0.83984,7.86094 -2.55312,10.98516c-1.71328,3.15781 -3.72891,5.87891 -6.04687,8.16328c-2.35156,2.28438 -6.51719,6.14766 -12.59766,11.55625c-1.67969,1.51172 -3.02344,2.85547 -4.03125,4.03125c-1.00781,1.14219 -1.74688,2.21719 -2.25078,3.15781c-0.50391,0.97422 -0.87344,1.91484 -1.14219,2.88906c-0.26875,0.97422 -0.67187,2.65391 -1.20938,5.07266c-0.94062,5.10625 -3.86328,7.69297 -8.76797,7.69297c-2.55313,0 -4.70312,-0.83984 -6.45,-2.51953c-1.74687,-1.67969 -2.62031,-4.16563 -2.62031,-7.45781c0,-4.13203 0.63828,-7.72656 1.91484,-10.75c1.27656,-3.02344 2.98984,-5.67734 5.10625,-7.96172c2.11641,-2.28437 4.97187,-5.00547 8.56641,-8.16328c3.15781,-2.75469 5.40859,-4.8375 6.81953,-6.24844c1.41094,-1.41094 2.58672,-2.95625 3.52734,-4.70312c0.97422,-1.71328 1.44453,-3.59453 1.44453,-5.61016c0,-3.93047 -1.47812,-7.25625 -4.40078,-9.97734c-2.92266,-2.72109 -6.71875,-4.06484 -11.32109,-4.06484c-5.40859,0 -9.40625,1.37734 -11.95938,4.09844c-2.55312,2.72109 -4.73672,6.75234 -6.48359,12.06016c-1.67969,5.57656 -4.8375,8.33125 -9.50703,8.33125c-2.75469,0 -5.07266,-0.97422 -6.9875,-2.92266c-1.88125,-1.88125 -2.85547,-3.96406 -2.85547,-6.24844zM85.12656,141.86641c-2.98984,0 -5.61016,-0.97422 -7.86094,-2.92266c-2.25078,-1.94844 -3.35937,-4.66953 -3.35937,-8.16328c0,-3.09063 1.075,-5.71094 3.25859,-7.82734c2.15,-2.11641 4.8375,-3.15781 7.96172,-3.15781c3.09063,0 5.71094,1.075 7.82734,3.15781c2.11641,2.11641 3.15781,4.73672 3.15781,7.82734c0,3.46016 -1.10859,6.14766 -3.32578,8.12969c-2.21719,1.98203 -4.77031,2.95625 -7.65937,2.95625z" fill="#ffffff"></path></g></g></svg>&nbsp How stuff works &nbsp <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                      </div>
 
- 
-  <div class="container">
-    <div class="hh hi hj u m hk fu hl hm hn ho hp"><div class="km" id="lo-homepage-testimonials-header"><h2 class="cm cn co cp cq cr cs ct cu cv cw cx cy">Data Preprocessing Steps.</h2></div></div>
-    
-    <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text"><div class="kl" id="lo-homepage-no-ads-body-text">There is a lot of data available to us on the internet.<!-- --> <span class="fs fb">So how can we manipulate and clean this text data to build a model? The answer lies in the wonderful world of Natural Language Processing (NLP).</span> <!-- -->So, in this project we have used NLP to process the data.<!-- -->Cleaning the data consists of a multi stage process:<!----> <ul style="list-style-type:square"><li>Word tokenization.</li><li>Predicting parts of speech for each token. </li><li>Text lemmatization. </li><li>Identifying and removing stop words, and much more. </li></ul></div></div></h3></p>
-    <hr class="gn go gp gq gr gs gt gu gv gw gx gy">
-    
-
-    <div class="hh hi hj u m hk fu hl hm hn ho hp"><div class="km" id="lo-homepage-testimonials-header"><h2 class="cm cn co cp cq cr cs ct cu cv cw cx cy">What is word tokenization in NLP?</h2></div></div>
-    <div class="accordion-content" style="width: 940px;">
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Tokenization is essentially splitting a phrase, sentence, paragraph, or an entire text document into smaller units, such as individual words or terms. Each of these smaller units are called tokens.</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">In tokenization, smaller units are created by locating word boundaries, these are the ending point of a word and the beginning of the next word.</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Tokenization is important because the meaning of the text could easily be interpreted by analyzing the words present in the text. </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text"><img src="img2.png" width="70%">  </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">There are numerous uses of doing this. We can use this tokenized form to: <ul style="list-style-type:square"><li>Count the number of words in the text </li><li>Count the frequency of the word, that is, the number of times a particular word is present etc </li></ul></div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">In this project we have done tokenizatiom using NLTK library. NLTK, short for Natural Language ToolKit, is a library written in Python for symbolic and statistical Natural Language Processing.</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">NLTK contains a module called tokenize() which further classifies into two sub-categories: <ul style="list-style-type:square"><li><span>Word tokenize:</span> We use the word_tokenize() method to split a sentence into tokens or words</li><li><span>Sentence tokenize:</span> We use the sent_tokenize() method to split a document or paragraph into sentences .</li></ul></div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Now, after tokenizing the word next step is to classify words into their parts of speech and labeling them accordingly is known as <span>part-of-speech tagging, POS-tagging, or simply tagging</span>.
-        A part-of-speech tagger, or POS-tagger, processes a sequence of words, and attaches a part of speech tag to each word .</div></h3></p><hr class="gn go gp gq gr gs gt gu gv gw gx gy">
-
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- </section> -->
 
-    <div class="hh hi hj u m hk fu hl hm hn ho hp"><div class="km" id="lo-homepage-testimonials-header"><h2 class="cm cn co cp cq cr cs ct cu cv cw cx cy">What is text lemmatization and how it is better than stemming?</h2></div></div>
-
-
-    <div class="accordion-content" style="width: 940px;">
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Stemming and Lemmatization are Text Normalization (or sometimes called Word Normalization) techniques in the field of Natural Language Processing that are used to prepare text, words, and documents for further processing. </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Languages we speak and write are made up of several words often derived from one another. When a language contains words that are derived from another word as their use in the speech changes is called Inflected Language. </div></h3></p>
-
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text"><img src="img1.png" width="70%">  </div></h3></p>
-
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Stemming and Lemmatization helps us to achieve the root forms   </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Stemming is different to Lemmatization in the approach it uses to produce root forms of words and the word produced. </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">"Stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language."   </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Lemmatization, unlike Stemming is better as it reduces the inflected words properly ensuring that the root word belongs to the language.  </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">For example, runs, running, ran are all forms of the word run, therefore run is the lemma of all these words.</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Python NLTK provides WordNet Lemmatizer that uses the WordNet Database to lookup lemmas of words.</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">You need to provide the context in which you want to lemmatize that is the parts-of-speech (POS). This is done by giving the value for pos parameter in wordnet_lemmatizer.lemmatize. Lemmatization, unlike</div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Stemming, reduces the inflected words properly ensuring that the root word belongs to the language. In Lemmatization root word is called Lemma. A lemma (plural lemmas or lemmata) is the canonical form, dictionary form, or citation form of a set of words. </div></h3></p><hr class="gn go gp gq gr gs gt gu gv gw gx gy">
-      <!-- <hr class="gn go gp gq gr gs gt gu gv gw gx gy"> -->
-
-    </div>
-
-
-    <div class="hh hi hj u m hk fu hl hm hn ho hp"><div class="km" id="lo-homepage-testimonials-header"><h2 class="cm cn co cp cq cr cs ct cu cv cw cx cy">Some of the methods:</h2></div></div>
-
-    <div class="accordion-content" style="width: 940px;">
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">TF-IDF is a statistical measure that evaluates how relevant a word is to a document in a collection of documents. This is done by multiplying two metrics: how many times a word appears in a document, and the inverse document frequency of the word across a set of documents. </div></h3></p>
-
-      <p class="paragraph-11"><h3 class="as at cz fc db fd fe ff fg fh fi fj dr"><div class="kl" id="lo-homepage-no-ads-body-text">Cosine similarity is one of the metric to measure the text-similarity between two documents irrespective of their size in Natural language Processing. A word is represented into a vector form. The text documents are represented in n-dimensional vector space. </div></h3></p>
-
-
-     <hr class="gn go gp gq gr gs gt gu gv gw gx gy">
-
-    </div>
-
-
- </div>
-  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-
-  
+    <!-- bootstrap js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+
 </html>

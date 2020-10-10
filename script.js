@@ -4,8 +4,13 @@ jQuery(function($){
 
     var totalCount = 7;
     var num = Math.ceil( Math.random() * totalCount );
+
+    var bglist =[
+      "https://i1.wp.com/ccgdelhi.org/wp-content/uploads/2014/07/highway-movie-poster.jpg?fit=1280%2C720&ssl=1","https://wallpapercave.com/wp/wp6118625.jpg","https://photoshoptrainingchannel.com/wp-content/uploads/2012/09/man-of-steel-superman-post.jpg","https://img.indiefolio.com/fit-in/1100x0/filters:format(webp):fill(transparent)/project/body/cf5210abeea454251040e29aad5ef1fe.jpg","https://saniose.com/wp-content/uploads/Saniose-Fargo-Regular-Edition-Movie-Poster.jpg"
+      ,"https://www.webfx.com/blog/images/cdn.designinstruct.com/files/179-horrormovie_poster_design/DI_dark_castle.jpg","https://www.joblo.com/assets/images/joblo/posters/2019/04/Avengers-Endgame-Odeon-poster-1-A.jpg","https://cdn.vox-cdn.com/thumbor/o-B6phGVeUCGR-77T-E8119clKc=/0x0:1280x853/1200x800/filters:focal(0x0:1280x853)/cdn.vox-cdn.com/uploads/chorus_image/image/46970672/star_wars_poster_full.0.0.0.jpg","https://s8v8k3v9.stackpathcdn.com/wp-content/uploads/2016/03/grindhouse-style-poster.jpg","https://d2kektcjb0ajja.cloudfront.net/images/posts/feature_images/000/000/072/large-1466557422-feature.jpg?1466557422"]
+
     function setBGImage() {
-        var bgimage = './img/'+num+'.jpg';
+        var bgimage = bglist[num];
         $('.search').css(
         {
         backgroundImage:"url("+bgimage+")",
@@ -18,15 +23,6 @@ jQuery(function($){
     setBGImage();
 });
 
-    //autocomplete
-// $(document).ready(function(){
-//   const pozycje_autocomplete = document.querySelector('input.autocomplete');
-//   let instance = M.Autocomplete.getInstance(pozycje_autocomplete);
-//
-//   let po = {"Google": 'https://placehold.it/250x250'};
-//
-//   instance.updateData(po);
-// });
 document.addEventListener("DOMContentLoaded", function() {
   options = {
     data: {
@@ -41,13 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.getElementById("autocomplete-input").addEventListener("input", function() {
   var value = document.getElementById('autocomplete-input').value;
-  newData = randomData(value);
   var elem = document.querySelector(".autocomplete");
   var instance = M.Autocomplete.getInstance(elem);
-  instance.updateData(newData);
+  newData = randomData(value, instance);
 });
 
-function randomData(value = ""){
+function randomData(value = "", instance){
   var fakeData = {"Google1111": null}
 
   var myHeaders = {
@@ -55,7 +50,7 @@ function randomData(value = ""){
   	'Content-Type': 'application/json'
 	}
 
-  fetch("http://127.0.0.1:5000/search",{
+  fetch("https://whattowatch121.herokuapp.com/search",{
     method: "POST",
     headers: myHeaders,
     body: JSON.stringify({"key": value})
@@ -68,6 +63,12 @@ function randomData(value = ""){
       for(i = 0; i < resp.length; i++){
         fakeData[resp[i]] = null;
       }
+    }
+  )
+  .then(
+    function(resp){
+      instance.updateData(fakeData);
+      instance.open();
     }
   )
   .catch(function(res){ console.log(res) });
@@ -99,7 +100,7 @@ scrollLink.click(function(e){
 
   var value = document.getElementById('autocomplete-input').value;
 
-  fetch("http://127.0.0.1:5000/recommend",{
+  fetch("https://whattowatch121.herokuapp.com/recommend",{
     method: "POST",
     headers: myHeaders,
     body: JSON.stringify({"query": value})
